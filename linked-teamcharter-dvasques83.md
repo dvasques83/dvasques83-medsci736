@@ -2,18 +2,18 @@
 
 ## Project Vision
 
-Network visualization for collaboration among top patent developers
+Network visualization based on the OECD's HAN and European PATSTAT databases, for collaboration between top patent developers.
 
 ## Mission
 
-To provide an easy way to visualise a network linking institutions which collaborate in the innovation process
+To provide an easy way to visualise a network linking institutions which collaborate in the innovation process (patent development).
 
 ## Success Criteria
 
 - Create the network from the data with Python.
 - Code the visualisation data in D3.js.
 - Set a GitHub repository for a static html page.
-- Have te network visualisation running by October, 18th.
+- Have te network visualisation running by November, 27th.
 
 ## Behaviour Agreement
 
