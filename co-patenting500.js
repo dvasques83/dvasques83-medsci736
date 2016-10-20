@@ -3,6 +3,7 @@
 var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
+    radius = 5
 
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
@@ -51,8 +52,8 @@ d3.json("co-patenting500.json", function(error, graph) {
         .attr("y2", function(d) { return d.target.y; });
 
     node
-        .attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+        .attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius , d.x)); })
+        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
   }
 });
 
